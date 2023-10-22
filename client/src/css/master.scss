@@ -1,0 +1,35 @@
+@import url(./Variable.scss);
+$themeBg: #1012bd;
+$base-color: #c6538c;
+.filter-accordian {
+    .accordion-item {
+        border: none;
+
+        button {
+            background: #ffffff;
+            border: none;
+            box-shadow: none;
+        }
+
+        .accordion-collapse {
+            border: none;
+            padding: 0px 20px;
+
+            .form-check {
+                input {
+                    border-radius: 0px;
+                    box-shadow: none;
+                }
+                input:checked {
+                    background-color: $themeBg;
+                    border-color: $base-color;
+                }
+            }
+
+            svg {
+                padding: 4px 2px;
+                color: $themeBg;
+            }
+        }
+    }
+}
